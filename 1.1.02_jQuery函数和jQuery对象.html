@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1.1.02_jQuery函数和jQuery对象</title>
+</head>
+<body>
+	<a href="JavaScript:;">http</a>
+	<script src="jQuery-1.12.4.js"></script>
+	<script type="text/javascript">
+		//jQuery函数四种方法：
+		//1.查询元素，如上面的$('button')
+		//2.包装DOM对象为jQuery对象
+		$(document).ready(function(){
+			alert('document ready');
+		})
+		// 3.传递HtML文本给$()方法：
+		$('<a href="http://www.baidu.com">我是一个超链接</a>').before(document.body);
+		//4.传递函数到$(function(){...}) 完全等同2操作
+
+	</script>
+</body>
+</html>
